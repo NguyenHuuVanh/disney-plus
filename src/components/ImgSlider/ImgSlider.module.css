@@ -1,0 +1,52 @@
+.carousel {
+  transform: translateY(20px);
+  display: flex;
+  align-items: center;
+}
+.carousel .carousel_items {
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.carousel .carousel_items .casousel_link {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  display: block;
+  cursor: pointer;
+  padding: 4px;
+  position: relative;
+}
+.carousel .carousel_items .casousel_link img {
+  width: 100%;
+  height: 100%;
+}
+.carousel .carousel_items .casousel_link:hover {
+  border: 4px solid rgba(249, 249, 249, 0.8);
+  transition: 0.3s all linear;
+}
+.carousel > button {
+  display: none;
+  opacity: 0;
+  width: 5vw;
+  height: 100%;
+  z-index: 1;
+}
+.carousel > button:hover {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+}
+.carousel ul li button::before {
+  font-size: 1rem;
+  color: rgb(150, 158, 171);
+}
+.carousel .slick-list {
+  overflow: hidden;
+}
+.carousel .slick-prev::before {
+  position: absolute;
+  left: 18px;
+}
+.carousel .slick-next {
+  display: none;
+}/*# sourceMappingURL=ImgSlider.module.css.map */
